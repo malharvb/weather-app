@@ -13,7 +13,7 @@ const handle = (() => {
     };
   }
   async function fetchFn(city) {
-    let siteLink = `http://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&APPID=30106a6d46d37870fb8fb94068469ab0`
+    let siteLink = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&APPID=30106a6d46d37870fb8fb94068469ab0`
     try {
       const response = await fetch(siteLink, { mode: 'cors' });
       if (!response.ok) throw new Error('Invalid City');
